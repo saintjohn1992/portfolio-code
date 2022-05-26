@@ -1,5 +1,6 @@
 import "./about.css";
 import Dev from "../../img/dev.jpg";
+import Cert from "../../img/certificate.png";
 
 const About = () =>  {
    return(
@@ -10,7 +11,35 @@ const About = () =>  {
             <img src={Dev} alt="" className="a-img" />
         </div>
     </div>
-    <div className="a-right"></div>
+    <div className="a-right">
+        <h1 className="a-title">About Me</h1>
+        <p className="a-sub">
+        Web / Software Developer
+        </p>
+        <p className="a-desc">
+            Innovative, task driven professional with experience in 
+            web design and development. Able to consistently identify and provide 
+            the technological needs of clients through innovation. I'm proficient in 
+            creating user interfaces, writing, debugging code, troubleshooting simple/complex
+            issues, and implementing new features based on user feedback.
+        </p>
+        <div className="a-cert">
+            <img src={Cert} alt="" className="a-cert-img" />
+            <div className="a-cert-texts">
+                <h4 className="a-cert-title">placeholder</h4>
+                <p className="a-cert-desc">lorem ipsum nemo enim ipsam voluptatem.</p>
+            </div>
+            <div className="a-cert-texts">
+                <h4 className="a-cert-title">placeholder</h4>
+                <p className="a-cert-desc">lorem ipsum nemo enim ipsam voluptatem.</p>
+            </div>
+            <div className="a-cert-texts">
+                <h4 className="a-cert-title">placeholder</h4>
+                <p className="a-cert-desc">lorem ipsum nemo enim ipsam voluptatem.</p>
+            </div>
+
+        </div>
+    </div>
 </div>
    )
 }
