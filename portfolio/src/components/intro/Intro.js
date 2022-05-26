@@ -16,10 +16,10 @@ return (
                       <div className="intro-title-item">Fitness Fanatic</div>
                   </div>
               </div>
-              <div className="intro-description">
+              <p className="intro-description">
                   I use my skills to design, develop, stylish modern websites, web services, and online stores
                   for customers. 
-              </div>
+              </p>
           </div>
       </div>
       <div className="intro-right">
