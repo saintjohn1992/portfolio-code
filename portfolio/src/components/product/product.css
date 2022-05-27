@@ -1,0 +1,23 @@
+.p {
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.p-browser {
+    height: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.p-circle {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3px;
+}
