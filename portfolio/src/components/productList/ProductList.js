@@ -1,11 +1,12 @@
 import "./productlist.css"
 import Product from "../product/Product";
+import {Products} from "../../data"
 
 const ProductList = () => {
     return (
         <div className="pl">
             <div className="pl-texts">
-                <h1 className="pl-title">Project title goes here</h1>
+                <h1 className="pl-title"> My Projects</h1>
                 <p className="pl-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -13,12 +14,10 @@ const ProductList = () => {
                 </p>
             </div>
             <div className="pl-list">
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
+                {Products.map((item) => (
+                     <Product key={item.id} img={item.img} link={item.link} />
+                ))}
+               
             </div>
         </div>
     )
