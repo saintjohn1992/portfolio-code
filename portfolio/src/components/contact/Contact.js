@@ -2,8 +2,24 @@ import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+import { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const formRef = useRef();
+    const [done, setDone] = useState(false)
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_anwos2o', 'template_jbkq1ut', formRef.current, '8_41URTN2BcbXs_fP')
+        .then((result) => {
+            console.log(result.text);
+            setDone(true)
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
     return (
         <div className="c">
             <div className="c-bg"></div>
@@ -29,7 +45,7 @@ const Contact = () => {
                     <p className="c-desc">
                         <b>What Project do you have in mind?</b> Let's get in touch.
                     </p>
-                    <form>
+                    <form ref={formRef} onSubmit={handleSubmit}>
                         <input type="text" placeholder="Name" name="user_name" />
                         <br />
                         <input type="text" placeholder="Subject" name="user_subect" />
@@ -37,6 +53,8 @@ const Contact = () => {
                         <input type="email" placeholder="Email" name="user_email" />
                         <textarea rows="5" placeholder="Message" name="message" />
                         <button>Submit</button>
+                        
+                        {done && "Thank you..."}
                     </form>
                 </div>
             </div>
