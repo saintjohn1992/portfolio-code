@@ -5,6 +5,7 @@ import Address from "../../img/address.png";
 import { useContext, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from "../../context";
+import {FaRegPaperPlane} from "react-icons/fa"
 
 const Contact = () => {
     const formRef = useRef();
@@ -55,7 +56,7 @@ const Contact = () => {
                         <br />
                         <input style={{backgroundColor: darkMode && "#333"}} type="email" placeholder="Email" name="user_email" />
                         <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
-                        <button>Submit</button>
+                        <button><FaRegPaperPlane /> Submit</button>
                         
                         {done && "Thank you..."}
                     </form>
