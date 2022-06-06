@@ -90,6 +90,14 @@
     }
 
     .i-left-wrapper {
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%; 
+    }
 
+    .i-description {
+        display: none;
     }
 }
