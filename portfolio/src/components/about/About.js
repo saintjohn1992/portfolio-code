@@ -35,8 +35,9 @@ const About = () =>  {
                 <p className="a-cert-desc">Responsive web design certification - 300 hour course.</p>
             </div>
             <div className="a-cert-texts">
-                <h4 className="a-cert-title">placeholder</h4>
-                <p className="a-cert-desc">lorem ipsum nemo enim ipsam voluptatem.</p>
+                <h4 className="a-cert-title">freeCodeCamp</h4>
+                <p className="a-cert-desc">Frontend dev
+                libraries certification - 300 hour course.</p>
             </div>
 
         </div>
