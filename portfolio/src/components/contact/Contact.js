@@ -33,7 +33,7 @@ const Contact = () => {
                     <div className="c-info">
                         <div className="c-item">
                             <img src={Phone} alt="" className="c-icon" />
-                            +33-7-49-63-02-18
+                            +33.7.49.63.02.18
                         </div>
                         <div className="c-item">
                             <img src={Email} alt="" className="c-icon" />

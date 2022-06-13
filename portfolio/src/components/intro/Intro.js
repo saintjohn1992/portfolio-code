@@ -13,7 +13,7 @@ return (
                       <div className="i-title-item">Software Developer</div>
                       <div className="i-title-item">UI/UX Designer</div>
                       <div className="i-title-item">Web Developer</div>
-                      <div className="i-title-item">Fitness Fanatic</div>
+                      <div className="i-title-item">Tech Enthusiast</div>
                   </div>
               </div>
               <p className="i-description">
